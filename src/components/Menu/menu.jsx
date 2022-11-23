@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 
+import styles from "./menu.module.css"
+
 export function Menu() {
   return (
     <nav>
-      <ul>
+      <ul className={styles.container}>
         <li>
           <Link to="/"> Home </Link>
         </li>
         <li>
-          <Link to="/sobre"> Sobre </Link>
+          <Link className={styles.link}to="/sobre"> Sobre </Link>
         </li>
         <li>
           <Link to="/portfolio"> Portfólio </Link>

@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 2rem;
+    background: #fff;
+    color: blue; 
+}
+.link {
+    color: red;
+}
