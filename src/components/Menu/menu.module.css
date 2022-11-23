@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: center;
     gap: 10rem;
-    padding: 2rem;
+    padding: 1rem;
     background: #fff;
-    color: blue; 
 }
 .link {
     color: red;
+    font-weight: 600;
 }

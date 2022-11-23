@@ -7,16 +7,16 @@ export function Menu() {
     <nav>
       <ul className={styles.container}>
         <li>
-          <Link to="/"> Home </Link>
+          <Link className={styles.link} to="/"> Home </Link>
         </li>
         <li>
-          <Link className={styles.link}to="/sobre"> Sobre </Link>
+          <Link className={styles.link} to="/sobre"> Sobre </Link>
         </li>
         <li>
-          <Link to="/portfolio"> Portfólio </Link>
+          <Link className={styles.link} to="/portfolio"> Portfólio </Link>
         </li>
         <li>
-          <Link to="/contato"> Contato</Link>
+          <Link className={styles.link} to="/contato"> Contato </Link>
         </li>
       </ul>
     </nav>
