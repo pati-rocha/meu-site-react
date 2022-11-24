@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Menu } from "./components/Menu/menu";
+import { Footer } from "./components/Footer/footer"
 
-import { Home } from "./pages/Home";
-import { Sobre } from "./pages/Sobre";
-import { Portfolio } from "./pages/Portfolio";
-import { Contato } from "./pages/Contato";
+import { Home } from "./pages/Home/home";
+import { Sobre } from "./pages/Sobre/sobre";
+import { Portfolio } from "./pages/Portfolio/portfolio";
+import { Contato } from "./pages/Contato/contato";
 
 export function Router() {
   return (
@@ -18,6 +19,7 @@ export function Router() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
