@@ -12,6 +12,7 @@
     border: 1px solid;
     border-radius: 4px;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 .formText {
     min-height: 100px;
