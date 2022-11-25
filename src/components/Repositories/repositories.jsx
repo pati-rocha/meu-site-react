@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Axios from "axios";
-import "./repositories.css";
+import styles from "./repositories.module.css";
 
 export function Repositories() {
   const [repos, setRepos] = useState([]);
@@ -29,14 +29,14 @@ export function Repositories() {
   }, [repos, termoBuscado]);
 
   return (
-    <div className="input">
+    <div className={styles.input}>
       <input placeholder="Digite sua busca" onChange={handleSearch} />
-      <div className="main">
+      <div className= {styles.main}>
         {reposFiltrados.map((repo) => {
           return (
             <a
               key={repo.id}
-              className="card"
+              className={styles.card}
               href={repo.html_url}
               target="_blank"
             >
